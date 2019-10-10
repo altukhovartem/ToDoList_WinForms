@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Data; 
+
 
 namespace ToDoList_WinForms
 {
@@ -15,6 +17,16 @@ namespace ToDoList_WinForms
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            GlobalConfig.Connection.AddNewTask();
         }
     }
 }

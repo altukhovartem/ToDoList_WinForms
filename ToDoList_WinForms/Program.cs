@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Data;
+using Data.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,6 +18,7 @@ namespace ToDoList_WinForms
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            GlobalConfig.InitializeConnection(ConnectionTypes.Dapper);
             Application.Run(new Form1());
         }
     }
